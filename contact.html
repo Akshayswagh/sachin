@@ -3,7 +3,6 @@
 
     <head>
         <meta charset="utf-8">
-        <title>Travisa - Visa & Immigration Website Template</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="" name="keywords">
         <meta content="" name="description">
@@ -14,19 +13,575 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
 
         <!-- Icon Font Stylesheet -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/> -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
         <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-
+        <title>Contact Us - Sachin International</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
         <!-- Customized Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+		<link href="img/Sachin-International-New-Logo-1.png.png" rel="icon">
+        
+        <style>
+     
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .contact-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .contact-header h1 {
+            font-size: 3.5rem;
+            background: linear-gradient(45deg, #fff, #a53381);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 20px;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            animation: fadeInDown 1s ease;
+        }
+
+        .contact-header p {
+            font-size: 1.3rem;
+            color: #cbd5e0;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .contact-content {
+            /* display: grid; */
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        .contact-info {
+                margin-bottom: 1rem;
+
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideInLeft 1s ease;
+        }
+
+        .contact-info h2 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-info h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #a53381, #d64cb3);
+            border-radius: 2px;
+        }
+
+        .office-location {
+            margin-bottom: 35px;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .office-location:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid #a53381;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .office-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .office-header h3 {
+            color: #fff;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .office-header h3 i {
+            color: #a53381;
+        }
+
+        .office-actions {
+            display: flex;
+            gap: 15px;
+        }
+
+        .office-actions a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 8px 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .office-actions a:hover {
+            background: #a53381;
+            transform: scale(1.05);
+        }
+
+        .office-address {
+            margin-bottom: 15px;
+            color: #cbd5e0;
+            line-height: 1.7;
+            font-size: 1rem;
+        }
+
+        .contact-points {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #a53381;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .contact-points i {
+            font-size: 1.2rem;
+        }
+
+        .contact-details {
+            margin-top: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .contact-detail-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-detail-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateX(10px);
+        }
+
+        .contact-detail-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .contact-detail-item i {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #a53381, #d64cb3);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.3rem;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+
+        .contact-detail-item h4 {
+            color: #fff;
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .contact-detail-item p {
+            color: #cbd5e0;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            animation: slideInRight 1s ease;
+        }
+
+        .contact-form h2 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact-form h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: linear-gradient(45deg, #a53381, #d64cb3);
+            border-radius: 2px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 10px;
+            color: #fff;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-control:focus {
+            outline: none;
+            background: rgba(255, 255, 255, 0.15);
+            border-color: #a53381;
+            box-shadow: 0 0 0 3px rgba(165, 51, 129, 0.3);
+        }
+
+        textarea.form-control {
+            min-height: 180px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(45deg, #a53381, #d64cb3);
+            color: white;
+            border: none;
+            padding: 18px 40px;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            width: 100%;
+            box-shadow: 0 10px 20px rgba(165, 51, 129, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(165, 51, 129, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .submit-btn:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+
+        .submit-btn:hover:after {
+            left: 100%;
+        }
+
+        .map-section {
+            margin-top: 50px;
+            grid-column: 1 / -1;
+            animation: fadeIn 1s ease 0.5s both;
+        }
+
+        .map-section h2 {
+            color: #fff;
+            margin-bottom: 30px;
+            font-size: 2.2rem;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .map-section h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(45deg, #a53381, #d64cb3);
+            border-radius: 2px;
+        }
+
+        .map-container {
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .map-placeholder {
+            height: 100%;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .map-placeholder:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23a53381" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .map-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .map-content i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            color: #a53381;
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .map-content p {
+            margin-bottom: 10px;
+        }
+
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: 0;
+              z-index: -1; /* Move behind everything */
+    pointer-events: none; /* Allow clicks to pass through */
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(165, 51, 129, 0.1);
+            border-radius: 50%;
+            pointer-events: none; /* Each element also needs this */
+            animation: float 15s infinite linear;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 80px;
+            height: 80px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-element:nth-child(2) {
+            width: 120px;
+            height: 120px;
+            top: 70%;
+            left: 80%;
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 40%;
+            left: 85%;
+            animation-delay: 4s;
+        }
+
+        .floating-element:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 80%;
+            left: 20%;
+            animation-delay: 6s;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(180deg);
+            }
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .contact-header h1 {
+                font-size: 2.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .contact-header p {
+                font-size: 1.1rem;
+            }
+            
+            .office-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .office-actions {
+                width: 100%;
+                justify-content: flex-start;
+            }
+            
+            .contact-info, .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
     </head>
 
     <body>
@@ -39,14 +594,13 @@
         </div>
         <!-- Spinner End -->
 
-
         <!-- Topbar Start -->
         <div class="container-fluid bg-primary px-5 d-none d-lg-block">
             <div class="row gx-0 align-items-center">
                 <div class="col-lg-5 text-center text-lg-start mb-lg-0">
                     <div class="d-flex">
-                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2"></i>Example@gmail.com</a>
-                        <a href="#" class="text-muted me-0"><i class="fas fa-phone-alt text-secondary me-2"></i>+01234567890</a>
+                        <a href="#" class="text-muted me-4"><i class="fas fa-envelope text-secondary me-2" ></i>inquiry@sachininternational.in</a>
+                        <a href="#" class="text-muted me-0"><i class="fas fa-phone text-secondary me-2"></i>+91 77679 89898</a>
                     </div>
                 </div>
                 <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
@@ -72,9 +626,8 @@
         <!-- Navbar & Hero Start -->
         <div class="container-fluid nav-bar p-0">
             <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="display-5 text-secondary m-0"><img src="img/brand-logo.png" class="img-fluid" alt="">Travisa</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                <a href="index.html" class="navbar-brand p-0">
+                    <img src="img/Sachin-International-New-Logo-1.png.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -83,235 +636,170 @@
                     <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Home</a>
                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                       
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="service.html" class="nav-item nav-link">Our Service</a>
+                        <a href="service.html" class="nav-item nav-link">Holiday Packages</a>
+                        <a href="comingsoon.html" class="nav-item nav-link ">Gallery</a> <!-- Set active for current page -->
+                        <a href="comingsoon.html" class="nav-item nav-link">Our Franchise </a> <!-- Set active for current page -->
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                    <a href="" class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
                 </div>
             </nav>
         </div>
         <!-- Navbar & Hero End -->
 
-        <!-- Modal Search Start -->
-        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullscreen">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
-                        <h4 class="modal-title text-secondary mb-0" id="exampleModalLabel">Search by keyword</h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body d-flex align-items-center">
-                        <div class="input-group w-75 mx-auto d-flex">
-                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
-                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
         </div>
-        <!-- Modal Search End -->
 
-        <!-- Header Start -->
-        <div class="container-fluid bg-breadcrumb">
-            <div class="container text-center py-5" style="max-width: 900px;">
-                <h3 class="text-white display-3 mb-4 wow fadeInDown" data-wow-delay="0.1s">Contact Us</h1>
-                <ol class="breadcrumb justify-content-center text-white mb-0 wow fadeInDown" data-wow-delay="0.3s">
-                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#" class="text-white">Pages</a></li>
-                    <li class="breadcrumb-item active text-secondary">Contact</li>
-                </ol>    
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>Ready to Get our best Services! Feel free to contact with us</p>
             </div>
-        </div>
-        <!-- Header End -->
 
-        <!-- Contact Start -->
-        <div class="container-fluid contact overflow-hidden py-5">
-            <div class="container py-5">
-                <div class="row g-5 mb-5">
-                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
-                        <div class="sub-style">
-                            <h5 class="sub-title text-primary pe-3">Quick Contact</h5>
-                        </div>
-                        <h1 class="display-5 mb-4">Have Questions? Don't Hesitate to Contact Us</h1>
-                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat totam deserunt tempora. Tempore neque necessitatibus corporis error earum sint quae?</p>
-                        <div class="d-flex border-bottom mb-4 pb-4">
-                            <i class="fas fa-map-marked-alt fa-4x text-primary bg-light p-3 rounded"></i>
-                            <div class="ps-3">
-                                <h5>Location</h5>
-                                <p>123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Our Offices</h2>
+                    
+                    <div class="office-location">
+                        <div class="office-header">
+                            <h3><i class="fas fa-building"></i> Head Office - Pimpri</h3>
+                            <div class="office-actions">
+                                <a href="#"><i class="fas fa-directions"></i> Get Directions</a>
                             </div>
                         </div>
-                        <div class="row g-3">
-                            <div class="col-xl-6">
-                                <div class="d-flex">
-                                    <i class="fas fa-tty fa-3x text-primary"></i>
-                                    <div class="ps-3">
-                                        <h5 class="mb-3">Quick Contact</h5>
-                                        <div class="mb-3">
-                                            <h6 class="mb-0">Phone:</h6>
-                                            <a href="#" class="fs-5 text-primary">+012 3456 7890</a>
-                                        </div>
-                                        <div class="mb-3">
-                                            <h6 class="mb-0">Email:</h6>
-                                            <a href="#" class="fs-5 text-primary">travisa@example.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-6">
-                                <div class="d-flex">
-                                    <i class="fas fa-clone fa-3x text-primary"></i>
-                                    <div class="ps-3">
-                                        <h5 class="mb-3">Opening Hrs</h5>
-                                        <div class="mb-3">
-                                            <h6 class="mb-0">Mon - Friday:</h6>
-                                            <a href="#" class="fs-5 text-primary">09.00 am to 07.00 pm</a>
-                                        </div>
-                                        <div class="mb-3">
-                                            <h6 class="mb-0">Satday:</h6>
-                                            <a href="#" class="fs-5 text-primary">10.00 am to 05.00 pm</a>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="office-address">
+                            Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018
+                        </div>
+                        <div class="contact-points">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 77679 89898</span>
+                        </div>
+                    </div>
+                    
+                    <div class="office-location">
+                        <div class="office-header">
+                            <h3><i class="fas fa-building"></i> Branch Office - Mumbai</h3>
+                            <div class="office-actions">
+                                <a href="#"><i class="fas fa-directions"></i> Get Directions</a>
                             </div>
                         </div>
-                        <div class="d-flex align-items-center pt-3">
-                            <div class="me-4">
-                                <div class="bg-light d-flex align-items-center justify-content-center" style="width: 90px; height: 90px; border-radius: 10px;"><i class="fas fa-share fa-3x text-primary"></i></div>
+                        <div class="office-address">
+                            G-150, Haware, Fantasia Business Park, Plot No. 47, Sector 30A, Vashi, Navi Mumbai, Maharashtra 400703
+                        </div>
+                        <div class="contact-points">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 74989 85053</span>
+                        </div>
+                    </div>
+                    
+                    <div class="office-location">
+                        <div class="office-header">
+                            <h3><i class="fas fa-building"></i> Branch Office - FC Road Pune</h3>
+                            <div class="office-actions">
+                                <a href="#"><i class="fas fa-directions"></i> Get Directions</a>
                             </div>
-                            <div class="d-flex">
-                                <a class="btn btn-secondary border-secondary me-2 p-0" href="">facebook <i class="fas fa-chevron-circle-right"></i></a>
-                                <a class="btn btn-secondary border-secondary mx-2 p-0" href="">twitter <i class="fas fa-chevron-circle-right"></i></a>
-                                <a class="btn btn-secondary border-secondary mx-2 p-0" href="">instagram <i class="fas fa-chevron-circle-right"></i></a>
+                        </div>
+                        <div class="office-address">
+                            Office No.101, 1st Floor, Millenium Plaza, Fergusson College Rd, Shivajinagar
+                        </div>
+                        <div class="contact-points">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 86000 05082</span>
+                        </div>
+                    </div>
+                    
+                    <div class="office-location">
+                        <div class="office-header">
+                            <h3><i class="fas fa-building"></i> Branch Office - Baner</h3>
+                            <div class="office-actions">
+                                <a href="#"><i class="fas fa-directions"></i> Get Directions</a>
+                            </div>
+                        </div>
+                        <div class="office-address">
+                            Vihaan building, Office No, 201, Brahmavrind Housing Society, Vishal Nagar, Pimple Nilakh, Pimpri-Chinchwad, Pune, Maharashtra 411027
+                        </div>
+                        <div class="contact-points">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 91751 63900</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <i class="fas fa-map-marker"></i>
+                            <div>
+                                <h4>Office Location</h4>
+                                <p>Aspiro, Office, 101, Station Road, opp. TKL INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p>inquiry@sachininternational.in</p>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Hotline</h4>
+                                <p>+91 77679 89898</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3">
-                        <div class="sub-style">
-                            <h5 class="sub-title text-primary pe-3">Let’s Connect</h5>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
                         </div>
-                        <h1 class="display-5 mb-4">Send Your Message</h1>
-                        <p class="mb-3">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a class="text-primary fw-bold" href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
-                            <div class="row g-4">
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="phone" class="form-control" id="phone" placeholder="Phone">
-                                        <label for="phone">Your Phone</label>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-xl-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="project" placeholder="Project">
-                                        <label for="project">Your Project</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 160px"></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Enter the subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Write a Message</label>
+                            <textarea id="message" class="form-control" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
                 </div>
-                <div class="office pt-5">
-                    <div class="section-title text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="sub-style">
-                            <h5 class="sub-title text-primary px-3">Worlwide Offices</h5>
-                        </div>
-                        <h1 class="display-5 mb-4">Explore Our Office Worldwide</h1>
-                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
-                    </div>
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="office-item p-4">
-                                <div class="office-img mb-4">
-                                    <img src="img/office-2.jpg" class="img-fluid w-100 rounded" alt="">
-                                </div>
-                                <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">Australia</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">+123.456.7890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="office-item p-4">
-                                <div class="office-img mb-4">
-                                    <img src="img/office-1.jpg" class="img-fluid w-100 rounded" alt="">
-                                </div>
-                                <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">Canada</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">(012) 0345 6789</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="office-item p-4">
-                                <div class="office-img mb-4">
-                                    <img src="img/office-3.jpg" class="img-fluid w-100 rounded" alt="">
-                                </div>
-                                <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">United Kingdom</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">01234.567.890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="office-item p-4">
-                                <div class="office-img mb-4">
-                                    <img src="img/office-4.jpg" class="img-fluid w-100 rounded" alt="">
-                                </div>
-                                <div class="office-content d-flex flex-column">
-                                    <h4 class="mb-2">India</h4>
-                                    <a href="#" class="text-secondary fs-5 mb-2">+123.45.67890</a>
-                                    <a href="#" class="text-muted fs-5 mb-2">travisa@example.com</a>
-                                    <p class="mb-0">123, First Floor, 123 St Roots Terrace, Los Angeles 90010 Unitd States of America.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 pt-5 wow zoomIn" data-wow-delay="0.1s">
-                            <div class="rounded h-100">
-                                <iframe class="rounded w-100" 
-                                style="height: 500px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
+                
+                <div class="map-section">
+                    <h2>Office Location</h2>
+                    <div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3781.431230551885!2d73.806229!3d18.591563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTjCsDM1JzI5LjYiTiA3M8KwNDgnMjIuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+    </iframe>
+</div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
 
         <!-- Footer Start -->
         <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
@@ -320,7 +808,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-secondary mb-4">Contact Info</h4>
-                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 123 Street, New York, USA</a>
+                            <a href=""><i class="fa fa-map-marker me-2"></i> Aspiro, Office, 101, Station Rd, opp. THYSSENKRUPP INDUSTRIES, Pimpri-Chinchwad, Maharashtra 411018</a>
                             <a href=""><i class="fas fa-envelope me-2"></i> info@example.com</a>
                             <a href=""><i class="fas fa-phone me-2"></i> +012 345 67890</a>
                             <a href="" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67890</a>
@@ -364,7 +852,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item">
                             <h4 class="text-secondary mb-4">Newsletter</h4>
-                            <p class="text-white mb-3">Dolor amet sit justo amet elitr clita ipsum elitr est.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <p class="text-white mb-3">Subscribe our newsletter to get our latest update & news.</p>
                             <div class="position-relative mx-auto rounded-pill">
                                 <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
                                 <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
@@ -375,19 +863,17 @@
             </div>
         </div>
         <!-- Footer End -->
+
         
         <!-- Copyright Start -->
         <div class="container-fluid copyright py-4">
             <div class="container">
                 <div class="row g-4 align-items-center">
                     <div class="col-md-6 text-center text-md-start mb-md-0">
-                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span>
+                        <span class="text-white"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>2025 Copyrights by Sachin International</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom text-white" href="https://htmlcodex.com">HTML Codex</a>
+                        Designed By <a class="border-bottom text-white" href="https://gptsoftware.in">GPT SOFTWARE</a>
                     </div>
                 </div>
             </div>
@@ -397,19 +883,51 @@
         <!-- Back to Top -->
         <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
+        <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Add animation to button
+            const btn = this.querySelector('.submit-btn');
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+                btn.style.background = 'linear-gradient(45deg, #38a169, #48bb78)';
+                
+                setTimeout(() => {
+                    this.reset();
+                    btn.innerHTML = 'Send Message';
+                    btn.style.background = 'linear-gradient(45deg, #a53381, #d64cb3)';
+                    btn.disabled = false;
+                }, 2000);
+            }, 1500);
+        });
+
+        // Add hover effect to office locations
+        document.querySelectorAll('.office-location').forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px)';
+            });
+            
+            item.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+        </script>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
         
-    <!-- JavaScript Libraries -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
     </body>
-
 </html>
